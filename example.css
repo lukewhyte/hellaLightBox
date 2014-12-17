@@ -5,7 +5,7 @@ html, body { height: 100%; }
   position: absolute;
   top: 0;
   left: 0;
-  background: transparent url('lightbox-bg.png') repeat 0 0;
+  background: transparent url('example-bg.png') repeat 0 0;
   visibility: hidden;
   z-index: 5;
 }
