@@ -4,6 +4,7 @@ hellaLightbox.js
 A hella lightweight lightbox jQuery plugin that centers and displays any element – and children of that element – that you pass to it as a jQuery selector.
 
 **Accepted parameters:**
+
 `$(selector).hellaLightbox(trigger[, options])`
 >**trigger** (default: 400)
 >Type: Number or String
@@ -25,7 +26,8 @@ A hella lightweight lightbox jQuery plugin that centers and displays any element
 >>The content to place within the x-out button
 
 **Examples**
-Basic usage – fires lightbox 1.5 seconds after page load:
+
+Fire lightbox 1.5 seconds after page load:
 ````
 <div class="myLightbox">
   <span>Bunch o' stuff</span>
@@ -38,7 +40,7 @@ Basic usage – fires lightbox 1.5 seconds after page load:
 </script>
 ````
 
-More complex implementation - fire on link click, change x-out text and don't exit when clicking outside lightbox:
+Fire lightbox on link click, change x-out text and don't exit hide lightbox when user clicks outside of it:
 ````
 <a href="#" class="showLightbox">Click here to see my awesome photo!</a>
 <div class="lightbox">
