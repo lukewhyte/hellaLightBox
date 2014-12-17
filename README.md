@@ -60,3 +60,5 @@ Fire lightbox on link click, change x-out text and don't exit hide lightbox when
   });
 </script>
 ````
+
+A live example can [be seen here](http://lukeallanwhyte.com/tightrope/liteboxin/example.html).
