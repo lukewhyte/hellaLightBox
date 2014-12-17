@@ -19,8 +19,19 @@
   Lightbox.prototype = {
     addElements: function () {
       var xOut = '<div class="x-out" style="position:absolute;cursor:pointer;">'+this.options.xOut+'</div>';
-      this.$el.append(xOut);
-      this.$bg.appendTo('body');
+      this.$el.css({
+        display: 'none',
+        position: 'absolute',
+        'z-index': 10
+      }).append(xOut);
+      this.$bg.css({
+        visibility: 'hidden',
+        width: '100%',
+        position: 'absolute',
+        top: 0, left: 0,
+        'z-index': 5,
+        'background-color': '#6F6F6F'
+      }).appendTo('body');
     },
 
     centerElement: function ($el) {
@@ -61,7 +72,6 @@
     },
 
     init: function () {
-      this.$el.hide();
       this.addElements();
       this.bindShowEvent($.proxy(this.show, this));
       this.bindHideEvents($.proxy(this.hide, this));
