@@ -6,7 +6,7 @@ A hella lightweight lightbox jQuery plugin that centers and displays any element
 
 **Accepted parameters:**
 
-`$('.lightbox').hellaLightbox(trigger[, options])`  
+`$('.lightbox').hellaLightBox(trigger[, options])`  
 >**trigger** (default: 400)  
 >Type: Number or String  
 >Either a jQuery selector delineating the element(s) that, when clicked, will trigger the lightbox or, if number, the amount of time (in milliseconds) to wait before launching lightbox on page load  
@@ -34,10 +34,10 @@ Fire lightbox 1.5 seconds after page load:
 <div class="myLightbox">
   <span>Bunch o' stuff</span>
 </div>
-<script src="hellaLightbox.min.js"></script>
+<script src="hellaLightBox.min.js"></script>
 <script>
   $(function () {
-    $('.myLightbox').hellaLightbox(2000);
+    $('.myLightbox').hellaLightBox(2000);
   });
 </script>
 ````
@@ -50,10 +50,10 @@ Fire lightbox on link click, change x-out text and don't exit hide lightbox when
 </div>
 <a href="#" class="showLightbox">Or click here!</a>
 
-<script src="hellaLightbox.min.js"></script>
+<script src="hellaLightBox.min.js"></script>
 <script>
   $(function () {
-    $('.lighbox').hellaLightbox('a.showLightbox', {
+    $('.lighbox').hellaLightBox('a.showLightbox', {
       xOut: 'Click to Exit',
       hideOnBgClick: false
     });

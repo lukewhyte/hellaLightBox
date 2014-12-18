@@ -1,7 +1,7 @@
 (function ($) {
   'use strict';
 
-  var pluginName = 'hellaLightbox',
+  var pluginName = 'hellaLightBox',
     defaults = {
       trigger: 1000,
       triggerEvent: 'click',
