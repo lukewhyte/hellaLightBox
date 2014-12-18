@@ -6,10 +6,8 @@ A hella lightweight lightbox jQuery plugin that centers and displays any element
 
 **Accepted parameters:**
 
-````
-<div class="lightbox"><!-- stuff --></div>
-$('.lightbox').hellaLightbox(trigger[, options])
-````
+`<div class="lightbox"><!-- stuff --></div>`  
+`$('.lightbox').hellaLightbox(trigger[, options])`  
 >**trigger** (default: 400)  
 >Type: Number or String  
 >Either a jQuery selector delineating the element(s) that, when clicked, will trigger the lightbox or, if number, the amount of time (in milliseconds) to wait before launching lightbox on page load  
