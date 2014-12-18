@@ -6,7 +6,6 @@ A hella lightweight lightbox jQuery plugin that centers and displays any element
 
 **Accepted parameters:**
 
-`<div class="lightbox"><!-- stuff --></div>`  
 `$('.lightbox').hellaLightbox(trigger[, options])`  
 >**trigger** (default: 400)  
 >Type: Number or String  
