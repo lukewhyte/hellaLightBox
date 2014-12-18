@@ -1,7 +1,7 @@
-hellaLightbox.js
+hellaLightBox.js
 ===================
 
-A hella lightweight lightbox jQuery plugin that centers and displays any element – and children of that element – that you pass to it as a jQuery selector.
+A lightweight lightbox jQuery plugin that centers and displays any element – and children of that element – that you pass to it as a jQuery selector.
 
 
 **Accepted parameters:**
