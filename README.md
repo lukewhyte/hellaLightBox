@@ -14,17 +14,17 @@ A hella lightweight lightbox jQuery plugin that centers and displays any element
 >**options**
 >Type: Object
 >A map of additional options to pass to the plugin
->>**hideOnBgClick** (default: true)
->>Type: Boolean
->>Determins if clicking outside the lightbox should hide the lightbox
+>>**hideOnBgClick** (default: true)  
+>>Type: Boolean  
+>>Determins if clicking outside the lightbox should hide the lightbox  
 >>
->>**triggerEvent** (default: 'click')
->>Type: String
->>If the trigger is not a number, defines what type of event to bind to the trigger to show the lightbox
+>>**triggerEvent** (default: 'click')  
+>>Type: String  
+>>If the trigger is not a number, defines what type of event to bind to the trigger to show the lightbox  
 >>
->>**xOut** (default: 'X')
->>Type: String
->>The content to place within the x-out button
+>>**xOut** (default: 'X')  
+>>Type: String  
+>>The content to place within the x-out button  
 
 
 **Examples:**
