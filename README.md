@@ -7,13 +7,13 @@ A hella lightweight lightbox jQuery plugin that centers and displays any element
 **Accepted parameters:**
 
 `$(selector).hellaLightbox(trigger[, options])`
->**trigger** (default: 400)
->Type: Number or String
->Either a jQuery selector delineating the element(s) that, when clicked, will trigger the lightbox or, if number, the amount of time (in milliseconds) to wait before launching lightbox on page load
+>**trigger** (default: 400)  
+>Type: Number or String  
+>Either a jQuery selector delineating the element(s) that, when clicked, will trigger the lightbox or, if number, the amount of time (in milliseconds) to wait before launching lightbox on page load  
 >
->**options**
->Type: Object
->A map of additional options to pass to the plugin
+>**options**  
+>Type: Object  
+>A map of additional options to pass to the plugin  
 >>**hideOnBgClick** (default: true)  
 >>Type: Boolean  
 >>Determins if clicking outside the lightbox should hide the lightbox  
