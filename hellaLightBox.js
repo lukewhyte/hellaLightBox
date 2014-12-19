@@ -12,26 +12,34 @@
     Lightbox = function (element, trigger, options) {
       this.$el = $(element);
       this.options = $.extend({}, defaults, {trigger: trigger}, options);
-      this.$bg = $('<div class="lightbox-transparency"></div>');
+      this.$bg = this.setBg();
       this.init();
     };
 
   Lightbox.prototype = {
-    addElements: function () {
+    addLightboxToDom: function () {
       var xOut = '<div class="x-out" style="position:absolute;cursor:pointer;">'+this.options.xOut+'</div>';
       this.$el.css({
         display: 'none',
         position: 'absolute',
         'z-index': 10
       }).append(xOut);
-      this.$bg.css({
-        visibility: 'hidden',
-        width: '100%',
-        position: 'absolute',
-        top: 0, left: 0,
-        'z-index': 5,
-        'background-color': '#6F6F6F'
-      }).appendTo('body');
+    },
+
+    setBg: function () {
+      if ($('.lightbox-transparency').length > 0) return $('.lightbox-transparency');
+      else {
+        var $bg = $('<div class="lightbox-transparency"></div>');
+        $bg.css({
+          visibility: 'hidden',
+          width: '100%',
+          position: 'absolute',
+          top: 0, left: 0,
+          'z-index': 5,
+          'background-color': '#000'
+        }).appendTo('body');
+        return $bg;
+      }
     },
 
     centerElement: function ($el) {
@@ -42,8 +50,10 @@
     },
 
     show: function () {
+      if (this.$el.is(':visible')) return false;
       this.$bg.css({
         visibility: 'visible',
+        display: 'block',
         opacity: 0.9,
         height: $(document).height() + 'px'
       });
@@ -52,7 +62,7 @@
 
     hide: function () {
       this.$el.fadeOut('fast');
-      this.$bg.unbind().fadeOut('fast');
+      this.$bg.fadeOut('fast');
     },
 
     bindHideEvents: function (hide) {
@@ -72,7 +82,7 @@
     },
 
     init: function () {
-      this.addElements();
+      this.addLightboxToDom();
       this.bindShowEvent($.proxy(this.show, this));
       this.bindHideEvents($.proxy(this.hide, this));
     }
